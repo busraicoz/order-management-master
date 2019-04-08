@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost/testdb;DB_CLOSE_DELAY=-1
+    driverClassName: org.hsqldb.jdbc.JDBCDriver
+    username: SA
+    password:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+iyzipay-api:
+  api-key: ${IYZICO_APIKEY:sandbox-4qVqpR3lg1ZnRNlOgulReOxY7yPxVOI8}
+  secret-key: ${IYZICO_SECRETKEY:sandbox-iR9Qkjv2orKriYn4tgACaD6OkDBW89x4}
+  base-url: ${IYZICO_BASEURL:https://sandbox-api.iyzipay.com}
+
+
+
